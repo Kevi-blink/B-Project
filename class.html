@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <header><h1>Classes</h1></header>
+        <section class="class-section">
+            <form class="class-form">
+                <label>Class Name: <input type="text" class="input" placeholder="Class name"></label>
+                <button class="btn btn-primary" type="submit">Add Class</button>
+            </form>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Students</th>
+                        <th>Teacher</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>10A</td><td>30</td><td>Mr. Smith</td><td><button class="btn btn-secondary">Edit</button> <button class="btn btn-danger">Delete</button></td></tr>
+                    <tr><td>9B</td><td>28</td><td>Ms. Johnson</td><td><button class="btn btn-secondary">Edit</button> <button class="btn btn-danger">Delete</button></td></tr>
+                </tbody>
+            </table>
+        </section>
+        <a href="index.html" class="btn btn-primary back-btn">Back to Dashboard</a>
+    </div>
+</body>
+</html>

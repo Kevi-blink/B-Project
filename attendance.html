@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <header><h1>Attendance</h1></header>
+        <section class="attendance-section">
+            <form class="attendance-form">
+                <label>Date: <input type="date" class="input"></label>
+                <label>Class: <select class="input"><option>10A</option><option>10B</option></select></label>
+                <button class="btn btn-primary" type="submit">Mark Attendance</button>
+            </form>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>John Doe</td><td>Present</td><td>2025-05-25</td></tr>
+                    <tr><td>Jane Smith</td><td>Absent</td><td>2025-05-25</td></tr>
+                </tbody>
+            </table>
+            <button class="btn btn-secondary">Generate Attendance Report</button>
+        </section>
+        <a href="index.html" class="btn btn-primary back-btn">Back to Dashboard</a>
+    </div>
+</body>
+</html>

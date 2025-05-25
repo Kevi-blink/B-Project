@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <header><h1>Library</h1></header>
+        <section class="library-section">
+            <form class="library-form">
+                <label>Book Title: <input type="text" class="input" placeholder="Enter book title"></label>
+                <label>Student: <input type="text" class="input" placeholder="Enter student name or ID"></label>
+                <button class="btn btn-primary" type="submit">Issue Book</button>
+            </form>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Issued To</th>
+                        <th>Issue Date</th>
+                        <th>Return Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Mathematics 101</td><td>Jane Smith</td><td>2025-05-10</td><td>2025-05-20</td><td>Returned</td></tr>
+                    <tr><td>English Basics</td><td>John Doe</td><td>2025-05-15</td><td>-</td><td>Issued</td></tr>
+                </tbody>
+            </table>
+            <button class="btn btn-secondary">View Overdue Books</button>
+        </section>
+        <a href="index.html" class="btn btn-primary back-btn">Back to Dashboard</a>
+    </div>
+</body>
+</html>

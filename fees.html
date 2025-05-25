@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees - School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <header><h1>Fees</h1></header>
+        <section class="fees-section">
+            <form class="fees-form">
+                <label>Student: <input type="text" class="input" placeholder="Enter student name or ID"></label>
+                <label>Amount: <input type="number" class="input" placeholder="Enter amount"></label>
+                <button class="btn btn-primary" type="submit">Pay Fee</button>
+            </form>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>John Doe</td><td>$200</td><td>2025-05-20</td><td>Paid</td></tr>
+                    <tr><td>Jane Smith</td><td>$200</td><td>2025-05-21</td><td>Pending</td></tr>
+                </tbody>
+            </table>
+            <button class="btn btn-secondary">Generate Fee Report</button>
+        </section>
+        <a href="index.html" class="btn btn-primary back-btn">Back to Dashboard</a>
+    </div>
+</body>
+</html>

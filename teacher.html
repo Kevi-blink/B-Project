@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers - School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <header><h1>Teachers</h1></header>
+        <section class="teacher-section">
+            <form class="teacher-form">
+                <label>Name: <input type="text" class="input" placeholder="Teacher name"></label>
+                <label>Subject: <input type="text" class="input" placeholder="Subject"></label>
+                <button class="btn btn-primary" type="submit">Add Teacher</button>
+            </form>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Profile</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Mr. Smith</td><td>Mathematics</td><td><a href="#" class="link">View</a></td><td><button class="btn btn-secondary">Edit</button> <button class="btn btn-danger">Delete</button></td></tr>
+                    <tr><td>Ms. Johnson</td><td>English</td><td><a href="#" class="link">View</a></td><td><button class="btn btn-secondary">Edit</button> <button class="btn btn-danger">Delete</button></td></tr>
+                </tbody>
+            </table>
+        </section>
+        <a href="index.html" class="btn btn-primary back-btn">Back to Dashboard</a>
+    </div>
+</body>
+</html>

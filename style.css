@@ -187,6 +187,132 @@ header h1 {
     justify-content: center;
 }
 
+/* General Button Styles */
+.btn {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 2px 4px;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-primary {
+    background: #b6e0fe;
+    color: #17407b;
+}
+.btn-primary:hover {
+    background: #7fd3fa;
+}
+.btn-secondary {
+    background: #e3eafc;
+    color: #2a4d8f;
+}
+.btn-secondary:hover {
+    background: #b6d0ff;
+}
+.btn-danger {
+    background: #ffd6d6;
+    color: #b22222;
+}
+.btn-danger:hover {
+    background: #ffb3b3;
+}
+
+.input, select, textarea {
+    padding: 7px 10px;
+    border: 1px solid #b6d0ff;
+    border-radius: 5px;
+    margin: 0 8px 10px 0;
+    font-size: 1em;
+    background: #f7f9fb;
+    color: #222;
+}
+.input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #7fd3fa;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0 24px 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.styled-table th, .styled-table td {
+    padding: 12px 14px;
+    text-align: left;
+}
+.styled-table th {
+    background: #e3eafc;
+    color: #2a4d8f;
+    font-weight: 600;
+}
+.styled-table tr:nth-child(even) {
+    background: #f7f9fb;
+}
+.styled-table tr:hover {
+    background: #b6e0fe33;
+}
+
+/* Section backgrounds for variety */
+.exam-section { background: #f7f9fb; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.attendance-section { background: #f9fbe7; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.fees-section { background: #fff8e1; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.library-section { background: #e8f5e9; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.notice-section { background: #fce4ec; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.student-section { background: #e3f2fd; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.teacher-section { background: #f3e5f5; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.subject-section { background: #fff3e0; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.result-section { background: #e1f5fe; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.settings-section { background: #ede7f6; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.class-section { background: #f1f8e9; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.logout-section { background: #fffde7; border-radius: 12px; padding: 24px; margin-bottom: 24px; text-align: center; }
+
+.link {
+    color: #1976d2;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.link:hover {
+    color: #0d47a1;
+}
+
+.notice-list {
+    list-style: disc inside;
+    color: #4a6fa5;
+    margin: 0;
+    padding-left: 18px;
+}
+.notice-list li {
+    margin-bottom: 12px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.back-btn {
+    display: inline-block;
+    margin: 18px 0 18px 0;
+    padding: 8px 20px;
+    font-size: 1em;
+    border-radius: 6px;
+    background: #b6e0fe;
+    color: #17407b;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: background 0.2s, color 0.2s;
+}
+.back-btn:hover {
+    background: #7fd3fa;
+    color: #17407b;
+}
+
 @media (max-width: 900px) {
     .main-content {
         padding: 24px 10px 24px 10px;
@@ -205,6 +331,12 @@ header h1 {
         font-size: 0.95em;
         padding: 14px 0 8px 0;
     }
+    .styled-table th, .styled-table td {
+        padding: 8px 6px;
+    }
+    .exam-section, .attendance-section, .fees-section, .library-section, .notice-section, .student-section, .teacher-section, .subject-section, .result-section, .settings-section, .class-section, .logout-section {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -220,5 +352,8 @@ header h1 {
     }
     .footer-content {
         font-size: 0.9em;
+    }
+    .styled-table th, .styled-table td {
+        font-size: 0.95em;
     }
 }

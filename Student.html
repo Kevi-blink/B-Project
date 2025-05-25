@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <header><h1>Students</h1></header>
+        <section class="student-section">
+            <form class="student-form">
+                <label>Name: <input type="text" class="input" placeholder="Student name"></label>
+                <label>Class: <input type="text" class="input" placeholder="Class"></label>
+                <button class="btn btn-primary" type="submit">Add Student</button>
+            </form>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Profile</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>John Doe</td><td>10A</td><td><a href="#" class="link">View</a></td><td><button class="btn btn-secondary">Edit</button> <button class="btn btn-danger">Delete</button></td></tr>
+                    <tr><td>Jane Smith</td><td>9B</td><td><a href="#" class="link">View</a></td><td><button class="btn btn-secondary">Edit</button> <button class="btn btn-danger">Delete</button></td></tr>
+                </tbody>
+            </table>
+        </section>
+        <a href="index.html" class="btn btn-primary back-btn">Back to Dashboard</a>
+    </div>
+</body>
+</html>
